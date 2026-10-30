@@ -14,6 +14,11 @@ content:
       - name: date
         label: Datum
         type: date
+      - name: category
+        label: Kategorie
+        type: select
+        options:
+          values: [Gaming, Hardware, PC-Optimierung, Kaufberatung, News]
       - name: summary
         label: Kurzbeschreibung
         type: text
