@@ -1,0 +1,22 @@
+media:
+  input: media
+  output: /media
+content:
+  - name: articles
+    label: Artikel
+    type: collection
+    path: content/articles
+    fields:
+      - name: title
+        label: Titel
+        type: string
+        required: true
+      - name: date
+        label: Datum
+        type: date
+      - name: summary
+        label: Kurzbeschreibung
+        type: text
+      - name: body
+        label: Artikeltext
+        type: rich-text
