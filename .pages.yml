@@ -19,6 +19,11 @@ content:
         type: select
         options:
           values: [Gaming, Hardware, PC-Optimierung, Kaufberatung, News]
+      - name: image
+        label: Beitragsbild
+        type: image
+        options:
+          extensions: [jpg, jpeg, png, webp]
       - name: summary
         label: Kurzbeschreibung
         type: text
