@@ -27,6 +27,10 @@ content:
       - name: summary
         label: Kurzbeschreibung
         type: text
+      - name: amazon_link
+        label: Amazon SiteStripe Partnerlink (optional)
+        type: string
+        description: Nur für passende Produktartikel; Link aus SiteStripe einfügen.
       - name: body
         label: Artikeltext
         type: rich-text
