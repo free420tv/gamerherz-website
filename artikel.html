@@ -1,1 +1,37 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Artikel | GAMERHERZ</title><style>:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#070d1a;color:#edf4ff;font:16px/1.7 system-ui,Arial,sans-serif}header{background:#0d1830;border-bottom:1px solid #263956;padding:20px max(20px,calc((100vw - 960px)/2))}a{color:#77c6ff}header a{text-decoration:none;font-weight:800;letter-spacing:.07em;color:#76c8ff}main{max-width:960px;margin:55px auto;padding:0 20px}.tag{color:#6abfff;font-weight:700;text-transform:uppercase;letter-spacing:.13em;font-size:.8rem}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15}article{background:#101d34;border:1px solid #2b476b;border-radius:18px;padding:clamp(20px,4vw,44px);margin-top:28px;box-shadow:0 15px 45px #0004}article h2{color:#a8d8ff}article li{padding:4px 0}footer{margin:50px auto;text-align:center;color:#9badc4}</style></head><body><header><a href="/">🎮 GAMERHERZ</a></header><main><p class="tag">Gaming · PC-Hardware · Technik</p><h1>Artikel & Neuigkeiten</h1><p>Tipps, Tests und Erfahrungen – Technik mit Leidenschaft.</p><article><p class="tag">30. Oktober 2026</p><h2>Willkommen bei GAMERHERZ! 🎮💙</h2><p>Gaming ist für uns mehr als nur ein Hobby. Es ist Leidenschaft.</p><p>Bei GAMERHERZ dreht sich alles um Gaming, PC-Hardware und Technik, die wirklich etwas bringt.</p><p>Hier findest du künftig:</p><ul><li>Ehrliche Hardware-Tests und Erfahrungen</li><li>Tipps zur Verbesserung deiner Gaming-Performance</li><li>Kaufberatung für PC-Komponenten und Zubehör</li><li>Gaming-News und spannende Technikthemen</li></ul><p><strong>Unser Motto: Technik mit Leidenschaft.</strong></p><p>Wir wollen keine Produkte schönreden, sondern dir helfen, die richtige Entscheidung zu treffen.</p><p>Willkommen bei GAMERHERZ!</p></article></main><footer>GAMERHERZ · Gaming mit Leidenschaft</footer></body></html>
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Artikel | GAMERHERZ</title>
+<style>:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#070d1a;color:#edf4ff;font:16px/1.7 system-ui,Arial,sans-serif}header{background:#0d1830;border-bottom:1px solid #263956;padding:20px max(20px,calc((100vw - 960px)/2))}a{color:#77c6ff}header a{text-decoration:none;font-weight:800;letter-spacing:.07em;color:#76c8ff}main{max-width:960px;margin:55px auto;padding:0 20px}.tag{color:#6abfff;font-weight:700;text-transform:uppercase;letter-spacing:.13em;font-size:.8rem}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15}article{background:#101d34;border:1px solid #2b476b;border-radius:18px;padding:clamp(20px,4vw,44px);margin-top:28px;box-shadow:0 15px 45px #0004}article h2{color:#a8d8ff}article li{padding:4px 0}footer{margin:50px auto;text-align:center;color:#9badc4}.error{color:#ffb9b9}</style></head>
+<body><header><a href="/">🎮 GAMERHERZ</a></header><main><p class="tag">Gaming · PC-Hardware · Technik</p><h1>Artikel & Neuigkeiten</h1><p>Tipps, Tests und Erfahrungen – Technik mit Leidenschaft.</p><section id="articles" aria-live="polite">Artikel werden geladen …</section></main><footer>GAMERHERZ · Gaming mit Leidenschaft</footer>
+<script>
+const api='https://api.github.com/repos/free420tv/gamerherz-website/contents/content/articles?ref=main';
+const raw='https://raw.githubusercontent.com/free420tv/gamerherz-website/main/content/articles/';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function extract(md){
+ const m=md.match(/^---\s*\n([\s\S]*?)\n---\s*\n/);
+ const meta={}; if(m)for(const line of m[1].split('\n')){let x=line.match(/^([\w-]+):\s*(.*)$/);if(x)meta[x[1]]=x[2].trim().replace(/^["']|["']$/g,'');}
+ return {meta,body:md.slice(m?m[0].length:0)};
+}
+function render(md){
+ const lines=md.split(/\r?\n/),result=[];let list=false;
+ const inline=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,(_,label,url)=>'<a href="'+url+'" rel="noopener noreferrer">'+label+'</a>');
+ for(const line of lines){const t=line.trim();if(!t){if(list){result.push('</ul>');list=false;}continue;}
+ if(t.startsWith('- ')){if(!list){result.push('<ul>');list=true;}result.push('<li>'+inline(t.slice(2))+'</li>');continue;}
+ if(list){result.push('</ul>');list=false;}
+ if(/^#{1,3} /.test(t)){const level=t.match(/^#+/)[0].length;result.push('<h'+level+'>'+inline(t.slice(level+1))+'</h'+level+'>');}
+ else result.push('<p>'+inline(t)+'</p>');
+ }
+ if(list)result.push('</ul>');return result.join('');
+}
+async function load(){
+ const area=document.getElementById('articles');
+ try{
+ const r=await fetch(api,{headers:{Accept:'application/vnd.github+json'}});if(!r.ok)throw Error('GitHub API '+r.status);
+ const entries=(await r.json()).filter(x=>x.type==='file'&&x.name.endsWith('.md')).sort((a,b)=>b.name.localeCompare(a.name));
+ if(!entries.length){area.textContent='Noch keine Artikel vorhanden.';return;}
+ const docs=await Promise.all(entries.map(async f=>{const r=await fetch(raw+encodeURIComponent(f.name));if(!r.ok)throw Error('Artikel konnte nicht geladen werden');return extract(await r.text());}));
+ area.innerHTML=docs.map(({meta,body})=>'<article><p class="tag">'+esc(meta.date||'GAMERHERZ')+'</p><h2>'+esc(meta.title||'Artikel')+'</h2>'+render(body)+'</article>').join('');
+ }catch(err){console.error(err);area.innerHTML='<p class="error">Artikel konnten gerade nicht geladen werden. Bitte die Seite später neu laden.</p>';}
+}
+load();
+</script></body></html>
