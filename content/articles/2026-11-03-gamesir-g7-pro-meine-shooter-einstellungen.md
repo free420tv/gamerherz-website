@@ -1,8 +1,11 @@
 ---
-title: "GameSir G7 Pro: Meine Shooter-Einstellungen für Warzone, BF6 und Rainbow Six Siege"
+title: "GameSir G7 Pro: Meine Shooter-Einstellungen für Warzone, BF6 und Rainbow
+  Six Siege"
 date: 2026-11-03
 category: PC-Optimierung
-summary: "Mein GameSir-Nexus-Profil 2 im Detail: 1000 Hz, Deadzone 3, S-Kurve, adaptive Haartrigger und Zusatztasten – meine persönlichen Erfahrungen."
+image: /media/Screenshot (16).png
+summary: "Mein GameSir-Nexus-Profil 2 im Detail: 1000 Hz, Deadzone 3, S-Kurve,
+  adaptive Haartrigger und Zusatztasten – meine persönlichen Erfahrungen."
 ---
 # GameSir G7 Pro: Meine Shooter-Einstellungen für Warzone, BF6 und Rainbow Six Siege
 
