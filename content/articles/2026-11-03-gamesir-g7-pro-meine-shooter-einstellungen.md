@@ -30,6 +30,22 @@ Die Abfragerate von 1000 Hz betrifft die entsprechende PC-Konfiguration; sie bed
 
 *Mein tatsächliches Hauptprofil 2 in GameSir Nexus – eigener Screenshot.*
 
+## Meine weiteren GameSir-Nexus-Profile im Vergleich
+
+Neben meinem Hauptprofil 2 habe ich weitere Varianten ausprobiert. Die folgenden Bilder zeigen meine tatsächlichen Nexus-Einstellungen; die Profile sind keine allgemeingültigen Empfehlungen.
+
+![GameSir Nexus Profil 1 mit linearen Stick-Kurven und festem Haartrigger](/media/gamesir-nexus-profil-1.jpg)
+
+*Profil 1: Lineare Stick-Kurven und fixer Haartrigger-Modus.*
+
+![GameSir Nexus Profil 3 mit rechter S-Kurve und deaktiviertem Haartrigger](/media/gamesir-nexus-profil-3.jpg)
+
+*Profil 3: S-förmige rechte Stick-Kurve, Haartrigger-Modus ausgeschaltet.*
+
+![GameSir Nexus Profil 4 mit 500 Hz und linearen Stick-Kurven](/media/gamesir-nexus-profil-4.jpg)
+
+*Profil 4: 500 Hz, lineare Reaktionskurven und deaktivierter Haartrigger-Modus.*
+
 ## Warum ich rechts eine S-Kurve nutze
 
 Ich spiele dauerhaft mit dieser Kurve. In Call of Duty habe ich zusätzlich die **dynamische Zielreaktionskurve** eingestellt. Für mich fühlt sich diese Kombination beim Zielen und beim manuellen Ausgleichen des Waffenrückstoßes sehr angenehm an.
