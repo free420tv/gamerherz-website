@@ -1,0 +1,44 @@
+name: Publish GAMERHERZ articles
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/articles/**'
+      - 'media/**'
+      - 'scripts/build-articles.mjs'
+      - '.github/workflows/publish-articles.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout article sources (main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: source
+      - name: Checkout website production branch
+        uses: actions/checkout@v4
+        with:
+          ref: gamerherz-v3-entwurf
+          path: source/site
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate standalone HTML articles and sitemap
+        working-directory: source
+        run: node scripts/build-articles.mjs
+      - name: Publish website changes
+        working-directory: source/site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add beitraege sitemap.xml
+          if git diff --staged --quiet; then
+            echo "No article changes to publish."
+          else
+            git commit -m "Publish updated GAMERHERZ articles"
+            git push origin HEAD:gamerherz-v3-entwurf
+          fi
