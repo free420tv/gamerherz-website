@@ -82,6 +82,69 @@ Kalibrierung ist dabei keine magische Aim-Verbesserung. Sie dient der Prüfung b
 
 Die zusätzlichen Screenshots dieser Menüs werde ich noch genauer erläutern, damit man jeden Schritt nachvollziehen kann.
 
+## Schritt für Schritt: Mein GameSir-G7-Pro-Setup nachbauen
+
+Wenn du meine Einstellungen ausprobieren möchtest, würde ich nicht alle Regler auf einmal verändern. **Erstelle zuerst ein separates Profil**. So kannst du jederzeit zu deiner bisherigen Einstellung zurückwechseln.
+
+### Schritt 1 – GameSir Nexus öffnen und ein eigenes Profil auswählen
+
+Verbinde den GameSir G7 Pro mit deinem PC und öffne **GameSir Nexus**. Die Software zeigt die Profile oben in der Oberfläche an. Wähle ein Profil, das du für deinen persönlichen Test verwenden möchtest, und notiere dir die bisherigen Werte.
+
+Ich selbst nutze **Profil 2** als Hauptprofil. Du musst dafür nicht mein Profil überschreiben: Entscheidend ist, dass du deine Versuche von anderen Einstellungen trennst.
+
+### Schritt 2 – Abfragerate prüfen
+
+In meinem gezeigten PC-Profil ist **1000 Hz** gewählt. Stelle diesen Wert nur ein, wenn dein Verbindungsmodus und die Software ihn unterstützen. Der GameSir G7 Pro unterstützt laut GameSir 1000 Hz am PC über Kabel und 2,4-GHz-Verbindung; die Xbox-Konfiguration ist davon zu unterscheiden.
+
+Das kann die zeitliche Abtastung der Controllereingaben betreffen, ist aber **kein Versprechen für messbar besseres Aim**.
+
+### Schritt 3 – Stick-Einstellungen bewusst verändern
+
+Öffne die **Stick-Einstellungen** und probiere zunächst die lineare Kurve. Danach kannst du die Reaktionskurve für den rechten Stick verändern und dein persönliches Gefühl vergleichen.
+
+- Ich lasse die **linke Stick-Kurve linear**.
+- Rechts verwende ich **meine eigene S-förmige Kurve**.
+- Meinen Deadzone-Wert habe ich **von 6 auf 3** reduziert.
+
+Prüfe bei jeder Änderung, ob der Stick ohne Berührung ruhig bleibt. Eine geringe Deadzone kann kleinste Eingaben erfassen, aber ebenso unbeabsichtigte Bewegungen sichtbarer machen.
+
+### Schritt 4 – Haartrigger und Tastenbelegung anpassen
+
+Unter **Trigger** habe ich für LT und RT im Hauptprofil den **adaptiven Haartrigger-Modus** eingestellt. Vergleiche ihn mit den anderen Modi am besten zunächst in einem Trainingsbereich.
+
+Bei den Zusatztasten nutze ich:
+
+- **L4: A – Springen**
+- **R4: B – Ducken und Rutschen**
+
+Wähle in der Tastenbearbeitung die gewünschte Zusatztaste und ordne ihr die gewünschte Originalfunktion zu. **Speichere die Belegung und teste sie im Spiel**, damit du sicher bist, dass beispielsweise Springen und Rutschen so funktionieren wie vorgesehen. GameSir nennt die vier belegbaren Zusatztasten L4, R4, L5 und R5.
+
+### Schritt 5 – Kalibrierungsfunktion richtig einordnen
+
+GameSir Nexus bietet eine **Kalibrierung für Sticks und Trigger**. Das ist eine Funktion zum Prüfen beziehungsweise Abstimmen der Eingaben, **kein zusätzlicher Aim-Assist**.
+
+Wenn du eine Kalibrierung durchführst, folge unbedingt den Anweisungen, die deine Nexus-Version anzeigt. Laut GameSir muss die **Frontplatte beim Kalibrieren montiert** sein; ohne sie können falsche Bewegungsbereiche erfasst werden. Bewege Sticks und Trigger dabei ruhig und ohne Gewalt.
+
+**Meine Empfehlung:** Kalibriere nicht bloß deshalb neu, weil du deinen Deadzone-Wert geändert hast. Nutze die Funktion gezielt, wenn die Software oder das Verhalten des Controllers dafür einen Anlass bietet.
+
+### Schritt 6 – Originalfunktion bearbeiten und im Spiel testen
+
+In der Tastenbearbeitung kannst du festlegen, welche vorhandene Controllerfunktion eine belegbare Zusatztaste auslösen soll. Das ist besonders praktisch, wenn du wie ich springen oder rutschen möchtest, **ohne den rechten Daumen vom Aim-Stick zu nehmen**.
+
+Teste anschließend in Warzone, BF6 oder einem anderen Shooter ein paar Minuten lang **dieselbe Bewegung mit den alten und neuen Einstellungen**. So merkst du besser, ob die Belegung wirklich angenehm ist.
+
+### Weitere Einblicke in die Nexus-Oberfläche
+
+Ich habe außerdem zusätzliche Screenshots der Nexus-Menüs hochgeladen. Darunter sind Ansichten zur **Kalibrierung** und zur **Bearbeitung von Originalfunktionen**. Hier sind die weiteren Originalaufnahmen aus meiner Software; die genaue Menüansicht kann je nach Nexus-Version abweichen.
+
+![Zusätzlicher Original-Screenshot aus GameSir Nexus – Ansicht 20](/media/Screenshot%20(20).png)
+
+![Zusätzlicher Original-Screenshot aus GameSir Nexus – Ansicht 21](/media/Screenshot%20(21).png)
+
+![Zusätzlicher Original-Screenshot aus GameSir Nexus – Ansicht 22](/media/Screenshot%20(22).png)
+
+Für die übrigen Ansichten findest du hier die Links: [Screenshot 23](https://raw.githubusercontent.com/free420tv/gamerherz-website/main/media/Screenshot%20(23).png), [Screenshot 24](https://raw.githubusercontent.com/free420tv/gamerherz-website/main/media/Screenshot%20(24).png), [Screenshot 25](https://raw.githubusercontent.com/free420tv/gamerherz-website/main/media/Screenshot%20(25).png), [Screenshot 26](https://raw.githubusercontent.com/free420tv/gamerherz-website/main/media/Screenshot%20(26).png) und [Screenshot 27](https://raw.githubusercontent.com/free420tv/gamerherz-website/main/media/Screenshot%20(27).png).
+
 ## Meine weiteren Nexus-Profile im direkten Vergleich
 
 Ich habe nicht einfach die erste Einstellung übernommen. Meine anderen Profile zeigen, womit ich experimentiert habe – und warum ich am Ende bei Profil 2 geblieben bin.
