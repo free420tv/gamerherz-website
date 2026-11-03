@@ -31,6 +31,10 @@ content:
         label: Amazon SiteStripe Partnerlink (optional)
         type: string
         description: Nur für passende Produktartikel; Link aus SiteStripe einfügen.
+      - name: video_url
+        label: Produktvideo (YouTube-Link oder MP4-URL, optional)
+        type: string
+        description: YouTube-Link oder direkte HTTPS-MP4-Adresse. Externe YouTube-Videos werden erst nach Klick geladen.
       - name: body
         label: Artikeltext
         type: rich-text
