@@ -133,17 +133,45 @@ In der Tastenbearbeitung kannst du festlegen, welche vorhandene Controllerfunkti
 
 Teste anschließend in Warzone, BF6 oder einem anderen Shooter ein paar Minuten lang **dieselbe Bewegung mit den alten und neuen Einstellungen**. So merkst du besser, ob die Belegung wirklich angenehm ist.
 
-### Weitere Einblicke in die Nexus-Oberfläche
+### Meine zusätzliche GameSir-Nexus-Bildergalerie
 
-Ich habe außerdem zusätzliche Screenshots der Nexus-Menüs hochgeladen. Darunter sind Ansichten zur **Kalibrierung** und zur **Bearbeitung von Originalfunktionen**. Hier sind die weiteren Originalaufnahmen aus meiner Software; die genaue Menüansicht kann je nach Nexus-Version abweichen.
+Für diesen Guide habe ich acht weitere Screenshots direkt aus meiner GameSir-Nexus-Software aufgenommen. Sie zeigen zusätzliche Ansichten der Bedienoberfläche, unter anderem zur Kalibrierung und zur Bearbeitung von Tastenfunktionen.
 
-![Zusätzlicher Original-Screenshot aus GameSir Nexus – Ansicht 20](/media/Screenshot%20(20).png)
+**So nutze ich die Galerie:** Zuerst schaue ich mir die passende Funktion in Nexus an, dann prüfe ich ihre Wirkung mit dem Controller und teste die Einstellung anschließend im Spiel. Die Screenshots dokumentieren meine Softwareansichten; einzelne Schaltflächen können in anderen Versionen abweichen.
 
-![Zusätzlicher Original-Screenshot aus GameSir Nexus – Ansicht 21](/media/Screenshot%20(21).png)
+![Original-Screenshot 20 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(20).png)
 
-![Zusätzlicher Original-Screenshot aus GameSir Nexus – Ansicht 22](/media/Screenshot%20(22).png)
+*GameSir Nexus – Originalaufnahme 20 aus meinem Setup.*
 
-Für die übrigen Ansichten findest du hier die Links: [Screenshot 23](https://raw.githubusercontent.com/free420tv/gamerherz-website/main/media/Screenshot%20(23).png), [Screenshot 24](https://raw.githubusercontent.com/free420tv/gamerherz-website/main/media/Screenshot%20(24).png), [Screenshot 25](https://raw.githubusercontent.com/free420tv/gamerherz-website/main/media/Screenshot%20(25).png), [Screenshot 26](https://raw.githubusercontent.com/free420tv/gamerherz-website/main/media/Screenshot%20(26).png) und [Screenshot 27](https://raw.githubusercontent.com/free420tv/gamerherz-website/main/media/Screenshot%20(27).png).
+![Original-Screenshot 21 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(21).png)
+
+*GameSir Nexus – Originalaufnahme 21 aus meinem Setup.*
+
+![Original-Screenshot 22 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(22).png)
+
+*GameSir Nexus – Originalaufnahme 22 aus meinem Setup.*
+
+![Original-Screenshot 23 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(23).png)
+
+*GameSir Nexus – Originalaufnahme 23 aus meinem Setup.*
+
+![Original-Screenshot 24 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(24).png)
+
+*GameSir Nexus – Originalaufnahme 24 aus meinem Setup.*
+
+![Original-Screenshot 25 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(25).png)
+
+*GameSir Nexus – Originalaufnahme 25 aus meinem Setup.*
+
+![Original-Screenshot 26 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(26).png)
+
+*GameSir Nexus – Originalaufnahme 26 aus meinem Setup.*
+
+![Original-Screenshot 27 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(27).png)
+
+*GameSir Nexus – Originalaufnahme 27 aus meinem Setup.*
+
+**Tipp:** Nach dem Verändern von Stick-Kurven, Triggern oder Tastenbelegungen immer erst das Profil speichern und die Funktion kontrollieren, bevor du damit ein kompetitives Match spielst.
 
 ## Meine weiteren Nexus-Profile im direkten Vergleich
 
