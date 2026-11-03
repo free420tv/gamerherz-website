@@ -2,7 +2,7 @@
 title: "GameSir G7 Pro: Meine Shooter-Einstellungen – S-Kurve, 1000 Hz & Nexus"
 date: 2026-11-03
 category: PC-Optimierung
-image: /media/Screenshot (16).png
+image: /media/gamesir-nexus-16.png
 summary: "GameSir G7 Pro in Warzone, BF6 und Rainbow Six Siege: So nutze ich Nexus-Profil 2 mit S-Kurve, Deadzone 3, Haartriggern und Paddle-Belegung."
 amazon_link: https://link.amazon/B0bvIvuH7
 ---
@@ -31,7 +31,7 @@ Ich habe mehrere Konfigurationen getestet. **Profil 2 ist mein Hauptprofil**, zu
 
 **Wichtig:** Die 1000-Hz-Einstellung auf meinem Screenshot ist keine Aussage darüber, dass Xbox ebenfalls mit 1000 Hz arbeitet. Auch die einzelnen Nexus-Einstellungen sind persönliche Vorlieben, keine garantierte Leistungssteigerung.
 
-![Mein GameSir Nexus Hauptprofil 2: 1000 Hz, angepasste rechte Stick-Kurve, adaptive Trigger und Tastenbelegung](/media/Screenshot%20(16).png)
+![Mein GameSir Nexus Hauptprofil 2: 1000 Hz, angepasste rechte Stick-Kurve, adaptive Trigger und Tastenbelegung](/media/gamesir-nexus-16.png)
 
 *Mein echtes Nexus-Profil 2. Keine Hersteller-Mustergrafik, sondern meine eigene Konfiguration.*
 
@@ -139,35 +139,35 @@ Für diesen Guide habe ich acht weitere Screenshots direkt aus meiner GameSir-Ne
 
 **So nutze ich die Galerie:** Zuerst schaue ich mir die passende Funktion in Nexus an, dann prüfe ich ihre Wirkung mit dem Controller und teste die Einstellung anschließend im Spiel. Die Screenshots dokumentieren meine Softwareansichten; einzelne Schaltflächen können in anderen Versionen abweichen.
 
-![Original-Screenshot 20 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(20).png)
+![Original-Screenshot 20 aus meiner GameSir-Nexus-Software](/media/gamesir-nexus-20.png)
 
 *GameSir Nexus – Originalaufnahme 20 aus meinem Setup.*
 
-![Original-Screenshot 21 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(21).png)
+![Original-Screenshot 21 aus meiner GameSir-Nexus-Software](/media/gamesir-nexus-21.png)
 
 *GameSir Nexus – Originalaufnahme 21 aus meinem Setup.*
 
-![Original-Screenshot 22 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(22).png)
+![Original-Screenshot 22 aus meiner GameSir-Nexus-Software](/media/gamesir-nexus-22.png)
 
 *GameSir Nexus – Originalaufnahme 22 aus meinem Setup.*
 
-![Original-Screenshot 23 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(23).png)
+![Original-Screenshot 23 aus meiner GameSir-Nexus-Software](/media/gamesir-nexus-23.png)
 
 *GameSir Nexus – Originalaufnahme 23 aus meinem Setup.*
 
-![Original-Screenshot 24 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(24).png)
+![Original-Screenshot 24 aus meiner GameSir-Nexus-Software](/media/gamesir-nexus-24.png)
 
 *GameSir Nexus – Originalaufnahme 24 aus meinem Setup.*
 
-![Original-Screenshot 25 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(25).png)
+![Original-Screenshot 25 aus meiner GameSir-Nexus-Software](/media/gamesir-nexus-25.png)
 
 *GameSir Nexus – Originalaufnahme 25 aus meinem Setup.*
 
-![Original-Screenshot 26 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(26).png)
+![Original-Screenshot 26 aus meiner GameSir-Nexus-Software](/media/gamesir-nexus-26.png)
 
 *GameSir Nexus – Originalaufnahme 26 aus meinem Setup.*
 
-![Original-Screenshot 27 aus meiner GameSir-Nexus-Software](/media/Screenshot%20(27).png)
+![Original-Screenshot 27 aus meiner GameSir-Nexus-Software](/media/gamesir-nexus-27.png)
 
 *GameSir Nexus – Originalaufnahme 27 aus meinem Setup.*
 
