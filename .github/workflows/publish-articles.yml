@@ -27,6 +27,10 @@ jobs:
           ref: gamerherz-v3-entwurf
           path: source/site
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Sync CMS media to website
+        run: |
+          mkdir -p source/site/media
+          if [ -d source/media ]; then cp -a source/media/. source/site/media/; fi
       - name: Generate standalone HTML articles and sitemap
         working-directory: source
         run: node scripts/build-articles.mjs
@@ -35,7 +39,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add beitraege sitemap.xml
+          git add beitraege sitemap.xml media
           if git diff --staged --quiet; then
             echo "No article changes to publish."
           else
