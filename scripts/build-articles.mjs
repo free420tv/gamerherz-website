@@ -24,7 +24,7 @@ function parse(markdown) {
 }
 function inline(source) {
   return esc(source)
-    .replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (_all, alt, url) => {
+    .replace(/!\[([^\]]*)\]\((\S+)\)/g, (_all, alt, url) => {
       const src = safeUrl(url.replaceAll('&amp;', '&'));
       return src ? '<img loading="lazy" src="' + esc(src) + '" alt="' + alt + '">' : '';
     })
