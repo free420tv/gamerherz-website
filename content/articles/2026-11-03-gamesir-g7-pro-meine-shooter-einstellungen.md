@@ -26,6 +26,10 @@ In GameSir Nexus verwende ich hauptsächlich **Profil 2**. Meine Screenshots zei
 
 Die Abfragerate von 1000 Hz betrifft die entsprechende PC-Konfiguration; sie bedeutet nicht automatisch dieselbe Abfragerate auf Xbox.
 
+![Mein GameSir Nexus Hauptprofil 2 mit 1000 Hz, S-Kurve rechts und adaptivem Haartrigger](/media/Screenshot%20(16).png)
+
+*Mein tatsächliches Hauptprofil 2 in GameSir Nexus – eigener Screenshot.*
+
 ## Warum ich rechts eine S-Kurve nutze
 
 Ich spiele dauerhaft mit dieser Kurve. In Call of Duty habe ich zusätzlich die **dynamische Zielreaktionskurve** eingestellt. Für mich fühlt sich diese Kombination beim Zielen und beim manuellen Ausgleichen des Waffenrückstoßes sehr angenehm an.
