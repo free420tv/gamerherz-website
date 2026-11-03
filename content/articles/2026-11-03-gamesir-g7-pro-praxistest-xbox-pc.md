@@ -1,8 +1,11 @@
 ---
-title: "GameSir G7 Pro im Praxistest – Mein Shooter-Controller für Xbox und PC"
+title: GameSir G7 Pro im Praxistest – Mein Shooter-Controller für Xbox und PC
 date: 2026-11-03
 category: Hardware
-summary: "Mein persönlicher GameSir G7 Pro Test auf Xbox Series S und PC: TMR-Sticks, GameSir Nexus, 1000 Hz und Aim-Gefühl in Warzone, BF6 und Rainbow Six Siege."
+image: /media/GameSir G7 Pro im Praxistest.png
+summary: "Mein persönlicher GameSir G7 Pro Test auf Xbox Series S und PC:
+  TMR-Sticks, GameSir Nexus, 1000 Hz und Aim-Gefühl in Warzone, BF6 und Rainbow
+  Six Siege."
 amazon_link: https://link.amazon/B0bvIvuH7
 ---
 # GameSir G7 Pro im Praxistest – Warum mich dieser Controller auf Xbox und PC überzeugt
