@@ -8,7 +8,7 @@ const BASE = 'https://gamerherz-website.pages.dev';
 const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const safeUrl = value => {
   const v = String(value ?? '').trim();
-  if (v.startsWith('/media/')) return v;
+  if (v.startsWith('/media/')) return 'https://raw.githubusercontent.com/free420tv/gamerherz-website/main' + v;
   try { const u = new URL(v); return u.protocol === 'https:' ? u.href : ''; } catch { return ''; }
 };
 function parse(markdown) {
