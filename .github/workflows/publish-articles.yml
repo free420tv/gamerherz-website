@@ -9,6 +9,10 @@ on:
       - '.github/workflows/publish-articles.yml'
   workflow_dispatch:
 
+concurrency:
+  group: gamerherz-article-publishing
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -27,22 +31,39 @@ jobs:
           ref: gamerherz-v3-entwurf
           path: source/site
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Sync CMS media to website
-        run: |
-          mkdir -p source/site/media
-          if [ -d source/media ]; then cp -a source/media/. source/site/media/; fi
-      - name: Generate standalone HTML articles and sitemap
+      - name: Build and publish with safe retries
         working-directory: source
-        run: node scripts/build-articles.mjs
-      - name: Publish website changes
-        working-directory: source/site
+        shell: bash
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add beitraege sitemap.xml media
-          if git diff --staged --quiet; then
-            echo "No article changes to publish."
-          else
-            git commit -m "Publish updated GAMERHERZ articles"
-            git push origin HEAD:gamerherz-v3-entwurf
-          fi
+          set -euo pipefail
+          git -C site config user.name "github-actions[bot]"
+          git -C site config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          for attempt in 1 2 3 4 5; do
+            echo "Publishing attempt $attempt"
+            git -C site fetch origin gamerherz-v3-entwurf
+            git -C site reset --hard FETCH_HEAD
+
+            mkdir -p site/media
+            if [ -d media ]; then cp -a media/. site/media/; fi
+
+            node scripts/build-articles.mjs
+            git -C site add beitraege sitemap.xml media
+
+            if git -C site diff --staged --quiet; then
+              echo "All generated content is already published."
+              exit 0
+            fi
+
+            git -C site commit -m "Publish updated GAMERHERZ articles"
+
+            if git -C site push origin HEAD:gamerherz-v3-entwurf; then
+              echo "Published successfully."
+              exit 0
+            fi
+
+            echo "Production branch changed during publish; rebuilding from its latest state."
+          done
+
+          echo "::error::Unable to publish after five attempts."
+          exit 1
