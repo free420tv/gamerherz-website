@@ -1,0 +1,17 @@
+GAMERHERZ 2.0 – LOGO INTEGRATION
+================================
+1. Lade den Ordner assets in das gleiche Verzeichnis wie deine HTML-Datei hoch.
+   Bei einer Datei im Unterordner (z.B. content/) müssen die relativen Pfade angepasst werden (../assets/...).
+2. Ergänze im <head> deiner HTML-Datei:
+   <link rel="stylesheet" href="/gamerherz-logo.css">
+   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+3. Logo für die Startseite an der gewünschten Stelle im HTML:
+   <img class="gh-brand-logo" src="/assets/gamerherz-logo.webp" alt="GamerHerz – Technik mit Leidenschaft" width="1672" height="941">
+4. Kleines Symbol, zum Beispiel in der Navigation:
+   <a class="gh-brand-logo-link" href="/" aria-label="GamerHerz Startseite"><img class="gh-brand-icon" src="/assets/gamerherz-icon.webp" alt="" width="52" height="52"></a>
+5. Die Datei gamerherz-logo.css liegt im Web-Root (neben index.html).
+
+WICHTIG: Das Paket ist vorbereitet, aber noch nicht auf GitHub / Cloudflare hochgeladen.
+Vorhandene HTML-Dateien und andere Bilder werden nicht automatisch verändert.
+WebP ist für die Website optimiert, PNG steht als transparentes Original bereit.
